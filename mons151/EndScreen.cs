@@ -25,9 +25,7 @@ namespace mons151
             double correctRate = GameScreen.progress / gameSeconds;
             if (GameScreen.progress == 151)
             {
-                scoreLabel.Location = new Point(205, 373);
-                scoreLabel.Height = 100;
-                scoreLabel.Text = "151/151 or 100%\nIn: "
+                scoreLabel.Text = "Your score was : 151/151 or 100% in "
                    + GameScreen.TotalMinTime.ToString() + ":" + GameScreen.TotalSecTime.ToString("00");
                 rateLabel.Text = "Your rate of sucess was : " + correctRate.ToString("0.00") + " Pokemon/s.";
                 diplomaBox.Visible = true;

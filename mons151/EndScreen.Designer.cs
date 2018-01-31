@@ -74,7 +74,7 @@
             this.diplomaBox.BackgroundImage = global::mons151.Properties.Resources.Diploma_RB;
             this.diplomaBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.diplomaBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.diplomaBox.Location = new System.Drawing.Point(312, 293);
+            this.diplomaBox.Location = new System.Drawing.Point(311, 282);
             this.diplomaBox.Name = "diplomaBox";
             this.diplomaBox.Size = new System.Drawing.Size(201, 158);
             this.diplomaBox.TabIndex = 6;

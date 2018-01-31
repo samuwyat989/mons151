@@ -84,6 +84,7 @@ namespace mons151
             progressLabel.ForeColor = Color.FromArgb(192, 0, 0);
             //musicPlayer.PlayLooping();
         }
+
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
             SolidBrush backMenu = new SolidBrush(Color.SteelBlue);
@@ -120,6 +121,7 @@ namespace mons151
             e.Graphics.DrawRectangle(Pens.Gray, boarder4);
             e.Graphics.DrawRectangle(Pens.Gray, boarder5);
         }
+
         public void ExceptionCheck()
         {
             if (inputBox.Text == "Nidoran" || inputBox.Text == "nidoran" && playLines2[0] != row2[0] && playLines1[28] != row1[28])//nidoran exeption
@@ -366,7 +368,6 @@ namespace mons151
             #endregion
 
             Reset();//very important refresh, keeps counter in range
-
             if (progress == 151)
             {
                 gameTimer.Stop();
