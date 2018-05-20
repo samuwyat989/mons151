@@ -32,6 +32,7 @@
             this.scoreLabel = new System.Windows.Forms.Label();
             this.congratsLabel = new System.Windows.Forms.Label();
             this.diplomaBox = new System.Windows.Forms.PictureBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.diplomaBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,11 +82,21 @@
             this.diplomaBox.TabStop = false;
             this.diplomaBox.Visible = false;
             // 
+            // nameBox
+            // 
+            this.nameBox.Location = new System.Drawing.Point(274, 466);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(264, 20);
+            this.nameBox.TabIndex = 7;
+            this.nameBox.Visible = false;
+            this.nameBox.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.nameBox_PreviewKeyDown);
+            // 
             // EndScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.nameBox);
             this.Controls.Add(this.diplomaBox);
             this.Controls.Add(this.rateLabel);
             this.Controls.Add(this.scoreLabel);
@@ -105,5 +116,6 @@
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Label congratsLabel;
         private System.Windows.Forms.PictureBox diplomaBox;
+        private System.Windows.Forms.TextBox nameBox;
     }
 }

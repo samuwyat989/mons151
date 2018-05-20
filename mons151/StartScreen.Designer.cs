@@ -33,6 +33,7 @@
             this.normalModeButton = new System.Windows.Forms.Button();
             this.easyModeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.highscoreButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // differenceButton
@@ -86,11 +87,22 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "The Pokemon 151 Challenge";
             // 
+            // highscoreButton
+            // 
+            this.highscoreButton.Location = new System.Drawing.Point(111, 375);
+            this.highscoreButton.Name = "highscoreButton";
+            this.highscoreButton.Size = new System.Drawing.Size(612, 23);
+            this.highscoreButton.TabIndex = 9;
+            this.highscoreButton.Text = "View High Scores";
+            this.highscoreButton.UseVisualStyleBackColor = true;
+            this.highscoreButton.Click += new System.EventHandler(this.highscoreButton_Click);
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.highscoreButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.differenceButton);
             this.Controls.Add(this.diffModeButton);
@@ -110,5 +122,6 @@
         private System.Windows.Forms.Button normalModeButton;
         private System.Windows.Forms.Button easyModeButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button highscoreButton;
     }
 }

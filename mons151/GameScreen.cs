@@ -440,7 +440,6 @@ namespace mons151
             }
 
         }
-
         private void gameTimer_Tick(object sender, EventArgs e)
         {
             if (colourup)

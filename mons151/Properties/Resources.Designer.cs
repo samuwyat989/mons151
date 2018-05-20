@@ -71,6 +71,41 @@ namespace mons151.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        ///&lt;players&gt;
+        ///  &lt;player&gt;
+        ///    &lt;name&gt;Sam&lt;/name&gt;
+        ///    &lt;time&gt;180&lt;/time&gt;
+        ///    &lt;score&gt;151&lt;/score&gt;
+        ///  &lt;/player&gt;
+        ///  &lt;player&gt;
+        ///    &lt;name&gt;Ben&lt;/name&gt;
+        ///    &lt;time&gt;380&lt;/time&gt;
+        ///    &lt;score&gt;151&lt;/score&gt;
+        ///  &lt;/player&gt;
+        ///  &lt;player&gt;
+        ///    &lt;name&gt;Doyle&lt;/name&gt;
+        ///    &lt;time&gt;100&lt;/time&gt;
+        ///    &lt;score&gt;100&lt;/score&gt;
+        ///  &lt;/player&gt;
+        ///  &lt;player&gt;
+        ///    &lt;name&gt;Reid&lt;/name&gt;
+        ///    &lt;time&gt;160&lt;/time&gt;
+        ///    &lt;score&gt;98&lt;/score&gt;
+        ///  &lt;/player&gt;
+        ///  &lt;player&gt;
+        ///    &lt;name&gt;T&lt;/name&gt;
+        ///    &lt;time&gt;45&lt;/time&gt;
+        ///    &lt;score&gt;3&lt;/score&gt;
+        ///  &lt;/player&gt;        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HighScores {
+            get {
+                return ResourceManager.GetString("HighScores", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Pokemon_Research_Lab_Background {

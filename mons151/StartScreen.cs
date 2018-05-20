@@ -45,6 +45,15 @@ namespace mons151
             GameScreen gs = new GameScreen();
             f.Controls.Add(gs);
         }
+
+        private void highscoreButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            HighScoreScreen hs = new HighScoreScreen();
+            f.Controls.Add(hs);
+        }
+
         private void differenceButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("In 'Easy Mode' you are given the first letter of each pokemon's name.\nIn 'Normal Mode' it is the classic 151 challenge.\nIn 'Hard Mode' you choose which column you want to fill and have to complete it before choosing another.");
