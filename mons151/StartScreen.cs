@@ -54,6 +54,12 @@ namespace mons151
             f.Controls.Add(hs);
         }
 
+        private void introPlayer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            if (e.newState == 8)
+                introPlayer.Visible = false;
+        }
+
         private void differenceButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("In 'Easy Mode' you are given the first letter of each pokemon's name.\nIn 'Normal Mode' it is the classic 151 challenge.\nIn 'Hard Mode' you choose which column you want to fill and have to complete it before choosing another.");

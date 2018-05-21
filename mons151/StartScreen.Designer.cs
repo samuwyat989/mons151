@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartScreen));
             this.differenceButton = new System.Windows.Forms.Button();
             this.diffModeButton = new System.Windows.Forms.Button();
             this.normalModeButton = new System.Windows.Forms.Button();
             this.easyModeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.highscoreButton = new System.Windows.Forms.Button();
+            this.introPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            ((System.ComponentModel.ISupportInitialize)(this.introPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // differenceButton
@@ -97,11 +100,22 @@
             this.highscoreButton.UseVisualStyleBackColor = true;
             this.highscoreButton.Click += new System.EventHandler(this.highscoreButton_Click);
             // 
+            // introPlayer
+            // 
+            this.introPlayer.Enabled = true;
+            this.introPlayer.Location = new System.Drawing.Point(578, 455);
+            this.introPlayer.Name = "introPlayer";
+            this.introPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("introPlayer.OcxState")));
+            this.introPlayer.Size = new System.Drawing.Size(269, 82);
+            this.introPlayer.TabIndex = 10;
+            this.introPlayer.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.introPlayer_PlayStateChange);
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.introPlayer);
             this.Controls.Add(this.highscoreButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.differenceButton);
@@ -110,6 +124,7 @@
             this.Controls.Add(this.easyModeButton);
             this.Name = "StartScreen";
             this.Size = new System.Drawing.Size(850, 540);
+            ((System.ComponentModel.ISupportInitialize)(this.introPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,5 +138,6 @@
         private System.Windows.Forms.Button easyModeButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button highscoreButton;
+        private AxWMPLib.AxWindowsMediaPlayer introPlayer;
     }
 }
